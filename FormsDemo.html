@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Forms Demo</h1>
-    <form action="/blah"></form>
-    <input type="text" placeholder="username">
-    <input type="password" placeholder="password">
-    <input type="color" placeholder="Choose Color">
-    <input type="month">
-    <input type="file">
-    <input type="number">
-    <input type="date">
+    <form action="/blah">
+        <div>
+            <p>
+                <label for="username">Enter your uername:</label>
+                <input type="text" placeholder="username" id="username" name="username">
+            </p>
+            <p>
+                <label for="passsword">Enter your password:</label>
+                <input type="password" placeholder="password" id="Password" name="password">
+            </p>
+            <p>
+                <label for="member">Are u a member already?</label>
+                <input type="checkbox" id="member">
+            </p>
+            <p>
+                <label for="id">Enter Your ID number:</label>
+                <input type="number" id="id" placeholder="Member ID" name="memberID">
+            </p>
+            <p>
+                <label for="color">Select a colorfor theme preference:</label>
+                <input id="color" type="Color">
+            </p>
+            <!-- another way to use label and input together in a nested way-->
+            <p>
+                <label>Select Date Preference: <input type="date" name="date"></label>
+            </p>
+            <button>Submit </button>
+            <!-- Another way to add submit button using input -->
+            <input type="submit" value="Click me!">
+            <hr>
+        </div>
+    </form>
+    <form action="https://www.google.com/search">
+        <h2>Creating Google Search on your form!!</h2>
+        <p>
+            <label for="search">Search here</label>
+            <input type="text" id="search" name="q" placeholder="Search">
+            <button>Search Google</button>
+        </p>
+    </form>
+    <h2>Creating Youtube Search on your form!!</h2>
+    <form action="https://www.youtube.com/results?">
+    <label for="search">Search here</label>
+            <input type="text" id="search" name="search_query" placeholder="Search">
+            <button>Search Youtube</button>
+    </form>
+    <form action="https://www.youtube.com/results?">
+        <label for="search">Search here</label>
+                <input type="text" id="search" name="search_query" placeholder="Search">
+                <p>Hit Enter! No button required!</p>
+     </form>
+    </div>
 </body>
+
 </html>
