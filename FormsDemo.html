@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <a name="topmost"></a>
     <h1>Forms Demo</h1>
     <form action="/blah">
         <div>
@@ -26,21 +27,62 @@
             </p>
             <p>
                 <label for="id">Enter Your ID number:</label>
-                <input type="number" id="id" placeholder="Member ID" name="memberID">
+                <input type="number" id="id" placeholder="Member ID" name="memberID" min="1" max="10" value="5">
             </p>
             <p>
                 <label for="color">Select a colorfor theme preference:</label>
-                <input id="color" type="Color">
+                <input id="color" type="Color" name="color">
             </p>
             <!-- another way to use label and input together in a nested way-->
             <p>
                 <label>Select Date Preference: <input type="date" name="date"></label>
             </p>
+            <p>
+            <label for="rangeid">Amount of Cheese</label>
+            <input type="range" id="rangeid" min="10" max="100" name="cheeselevel" value="10">Select Range</input>
+        </p>
+        <p>
+            <label  for="request">Any references(250 words max)</label> <br>
+        <textarea id="request" name=request_given rows="5"  cols="30"  maxlength="250"></textarea>       </p>
             <button>Submit </button>
             <!-- Another way to add submit button using input -->
             <input type="submit" value="Click me!">
             <hr>
         </div>
+    </form>
+    <form action="/dummy">
+        
+        <h2>Form Validation demo</h2>
+        <p>
+            <label for="textfirst">Enter Your Name</label>
+            <input type="text" id="textfirst"name="text" required minlength="5" maxlength="15"></input>
+           <p>
+               <label for="email">Enter Email ID</label>
+            <input type="email" id="email" name="email" Placeholder="email"></input>
+                </p> 
+                <p>
+                    <label for="agree">Do u agree to terms and consitions?</label>
+                    <input type="radio" id="agree" name=agree></input>
+                    
+                </p>
+                <p>
+                    <label for="xs">XS</label>
+                    <input type="radio" name="size" id="xs" value="xs">
+                    <label for="m">M</label>
+                    <input type="radio" name="size" id="m" value="m">
+                    <label for="xl">XL</label>
+                    <input type="radio" name="size" id="xl" value="m">
+                </p>
+                
+                <select id="sizevalue" name="sizevalue">
+                    <option value="">--Please choose a size--</option>
+                <option value="Small">Small</options>
+                    <option value="Large">Large</options>
+                        <option value="XL">Xtra Large</options>
+                </select>
+            <button>Submit</button>
+        </p>
+
     </form>
     <form action="https://www.google.com/search">
         <h2>Creating Google Search on your form!!</h2>
@@ -61,7 +103,22 @@
                 <input type="text" id="search" name="search_query" placeholder="Search">
                 <p>Hit Enter! No button required!</p>
      </form>
+     <h1>Using Checkboxes and Radio Buttons</h1>
+     <!-- Chcekboxes and Radio Buttons -->
+     <form action="/membercomm">
+     <input type="checkbox" id="Member" checked>
+     <label for="Member">Member</label>
+    </form>
+    <form action="/blah">
+       
+    
+    <button>Submit</button>
+    <input type="submit" value="Click Me">
+</form >
+
     </div>
+    <hr>
+    <a href=”#topmost”>BACK TO TOP</a>,
 </body>
 
 </html>
