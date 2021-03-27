@@ -1,0 +1,17 @@
+h1{ 
+    color: blueviolet;
+    background-color: chocolate;
+}
+/* using hexadecimal color */
+h2{
+    color: #0f7456;
+}
+   /* using rgb system */
+p {    
+   color:rgb(210, 150 , 111);    
+   font-size: 20px;   
+   background: #008; 
+}     
+body{
+    background-color: #786969;
+}

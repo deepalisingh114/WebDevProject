@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    width: 50%;
+    font-weight: bolder;
+    text-decoration: line-through wavy blue;
+    letter-spacing: 10px;
+    font-size:50px;
+    font-family:fantasy;
+}
+p{
+    line-height: 2.5;
+    letter-spacing: 2px;
+   
+}
