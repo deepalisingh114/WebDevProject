@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/blah">
+        <div>
+            <p>
+                <label for="username">Enter your uername:</label>
+                <input type="text" placeholder="username" id="username" name="username">
+            </p>
+            <p>
+                <label for="passsword">Enter your password:</label>
+                <input type="password" placeholder="password" id="Password" name="password">
+            </p>
+            <p>
+                <label for="member">Are u a member already?</label>
+                <input type="checkbox" id="member">
+            </p>
+            <p>
+                <label for="id">Enter Your ID number:</label>
+                <input type="number" id="id" placeholder="Member ID" name="memberID" min="1" max="10" value="5">
+            </p>
+            <p>
+                <label for="color">Select a colorfor theme preference:</label>
+                <input id="color" type="Color" name="color">
+            </p>
+            <!-- another way to use label and input together in a nested way-->
+            <p>
+                <label>Select Date Preference: <input type="date" name="date"></label>
+            </p>
+            <p>
+            <label for="rangeid">Amount of Cheese</label>
+            <input type="range" id="rangeid" min="10" max="100" name="cheeselevel" value="10">Select Range</input>
+        </p>
+        <p>
+            <label  for="request">Any references(250 words max)</label> <br>
+        <textarea id="request" name=request_given rows="5"  cols="30"  maxlength="250"></textarea>       </p>
+            <button>Submit </button>
+    </form>
+</body>
+</html>
